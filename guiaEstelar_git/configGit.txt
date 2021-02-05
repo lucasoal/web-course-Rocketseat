@@ -1,0 +1,194 @@
+# Configuração inicial Git
+
+# São os dados que identificaram o usuário que
+fizer alterações.
+
+git config --global user.name "Nome do User"
+git config --global user.email "email@email.com"
+
+# 
+# 
+# Ver as configurações cadastradas
+# 
+# 
+
+git config --list
+
+# As configurações definidas para o Git, ficamficam na pasta do usuário(~/)
+
+cat ~/.gitconfig
+
+# Lista de manual do git 
+git help
+
+
+# 
+# 
+# Iniciando repositorio no git e ferramentas de LOG
+# 
+# 
+
+# Criar um novo diretório
+mkdir aulaGit
+
+# Iniciar o repositorio (dentro da pasta a ser compartilhada!!!)
+git init
+
+# 
+# 
+# Ver tudo que esta na pasta determinada
+# 
+# 
+
+# Nesta pasta (.git) é que esta tudo do repositório
+ls -al .git
+
+# Ver os commits e historico de alteraçoes no projeto
+git log
+# ou
+git log --oneline (forma reduzida)
+
+# Buscar os logs dos ultimos 'x' commits realizados 
+git log -n 'x'
+
+# Buscar os commits feitos DESDE uma determinada data
+git log --since2020-10-01
+
+# Buscar os commits feitos ATÉ uma determinada data
+git log --until2020-10-01
+
+# Buscar os commits feitos por determinado autor
+git log --author=NomeDoAutor
+
+# Busca a mensagem do commits
+git log --grep="init"
+
+
+# 
+# 
+# Realizando o primeiro commits
+# 
+# 
+
+# add os TODOS arquivos do diretório local
+git add .
+
+# add arquivo específico
+gid add nome_do_arquivo
+
+# add arquivo por extensão (* significa todos)
+git add *.html
+
+# Fazendo o commits(ponto na historia)
+git commit -m "Mensagem de descricao"
+
+# Removendo arquivos add erroneamente (arquivos staged, ou seja, no stage area)
+git rm --cached "nome_do_arquivo"
+
+# 
+# 
+# Editando arquivos
+# 
+# 
+
+# Após editar os arquivos, eles são adicionados novemente realizando um "git add"
+git add *
+git commit -m "Mensagem"
+
+# 
+# 
+# Modifcações com git diff
+# 
+# 
+
+# Verificando modifcações feitas no processo
+# O sinal de + e - diz quando adicionando ou subtraindo linhas
+git diff
+
+# Verificar o que tem no stage area pronto para commitar
+git diff --staged
+
+# Retirando arquivo do stage area
+git restore --staged nome_do_arquivo
+
+# 
+# 
+# Deletando os arquivos
+# 
+#
+
+# Deletando arquivo
+# Deleta o arquivo por geral e coloca no staged area
+git rm nome_do_arquivo
+# Commite as deleções falando o que foi feito
+
+# 
+# 
+# Renomeando os arquivos
+# 
+#
+
+git mv nome_do_arquivo novo_nome_do_arquivo
+
+# 
+# 
+# Movendo os arquivos
+# 
+#
+
+git mv nome_do_arquivo nome_da_pasta/
+
+# 
+# 
+# Desfazendo Alterações os arquivos
+# 
+#
+# Pode ser feito enquanto os arquivos estiverem na staged area 
+
+git restore nome_do_arquivo
+
+# 
+# 
+# Retirando arquivos do staged area
+# 
+#
+
+git restore --staged nome_do_arquivo
+# ou'
+git reset HEAD .
+
+# 
+# 
+# Corrigindo o último commits
+# 
+#
+# Alterando a mensagem do ultimo commit
+git commit --amend -m "Mensagem"
+
+# 
+# 
+# Recuperando arquivos do staged area
+# 
+#
+git checkout parte_num_rash -- nome_do_arquivo
+
+# 
+# 
+# Removendo arquivos nao rastreados (untracked)
+# 
+#
+
+git clean -n # mostra informação do que vai fazer
+git clean -f # remove de fato os arquivos
+
+# 
+# 
+# Revertendo um commits
+# 
+#
+
+# O 'x' deve ser um numero do comit
+# Contado de cima pra baixo, começando em 1
+git revert HEAD~X
+# ou
+git revert parte_num_rash

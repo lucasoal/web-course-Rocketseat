@@ -1,0 +1,86 @@
+<!--
+    Atributos Globais mais utilizados
+
+    - class
+    - contenteditable
+    - data-*
+    - hidden
+    - id
+    - style
+    - tabindex
+    - title
+-->
+
+<h1>Atributos Globais</h1>
+
+<div title="title">
+    - title <br>
+    Contém um texto representativo sobre a informação relacionada ao elemento ao qual este atributo pertence. Tal informação pode, mas não necessariamente, ser apresentada através de um tooltip.
+</div> <br>
+
+<div class="carrinho" title="class">
+    - class <br> É uma lista separada por espaço das classes do elemento. as classes permitem ao CSS e ao JavaScript selecionar e acessar elementos específicos atraves dos seletores de classe ou funciona como um método.
+</div> <br>
+
+<div contenteditable="true" title="contenteditable">
+    - contenteditable <br> É um atributo enumerado que indica se o elemento deve ser editado pelo usuário. Se assim for, o navegador modifica seu widget para permitir a edição. O atributo deve ter um dos seguintes valores: <br>
+    
+    - true ou uma string vazia, indica que o elemento deve ser editável; <br>
+    - false, indica que o elemento não deve ser editável.
+</div> <br>
+
+<div data-qualquerNomeAqui="" title="data">
+    - data <br>
+    Forma uma classe de atributos, denominado de dados personalizados, que permite troca de informações proprietárias entre o HTML e a sua representação no DOM pode ser usada por scripts. Todos esses dados personalizados estão disponíveis através da interface do elemento HTMLElement em que o atributo está definido. A propriedade  HTMLElement.dataset  dá acesso a eles.
+</div> <br>
+
+<div hidden title="hidden">
+    - hidden <br>
+    Um atributo booleano indica que o elemento ainda não é relevante ou não é mais relevante. Por exemplo, ele pode ser usado para ocultar elementos da página que não podem ser usados até que o processo de login tenha sido concluído. O navegador não renderizará esses elementos. Este atributo não deve ser usado para ocultar conteúdo que possa ser legível.
+</div> <br>
+
+<div data-id="" id="id" title="id">
+    - id <br>
+    Define um identificador exclusivo (ID) que deve ser único em todo o documento. Seu objetivo é identificar o elemento ao vincular (usando um identificador de fragmento), um script ou estilo (com CSS).
+</div> <br>
+
+<div style="color: orangered; font-family:'Times New Roman', Times, serif; font-size: medium;"  title="style">
+    - style  <br>
+    Contém regras de declarações CSS para aplicar no elemento. Note que é recomendado que as regras CSS fiquem num arquivo, ou vários arquivos, separado do HTML. Este atributo e o elemento 'style' tem principalmente o propósito para rápida estilização do elemento, como por exemplo para testes.
+</div> <br>
+
+<div title="tabindex">
+    - tabindex <br>
+    É um atributo que recebe valores inteiros e indica se um elemento pode receber o foco de entrada de valores (é focável), se ele deve entrar na sequência da navegação pelo teclado (através da tecla TAB), e qual posição da sequência.
+    <br>Sobre seus valores: <br>
+    - um valor negativo  indica que o elemento é focável, mas não é alcançável pela navegação sequencial do teclado (através da tecla TAB); <br>
+    - 0 indica que o elemento é focável e alcançavel pela navegação sequencial do teclado, mas sua ordem de seleção relativa
+    - definida pela convenção da plataforma (ou do navegador); <br>
+    - um valor positivo indica que o elemento é focável e alcançável pela navegação sequencial do teclado;  <br>
+    - sua ordem de seleção relativa é definida pelo valor colocado: <br>a sequência segue em ordem crescente definida no tabindex. <br>
+    Se vários elementos possuem o mesmo valor de tabindex, sua ordem relativa é estabelecida pela posição relativa no documento HTML.
+</div> <br>
+
+<div tabindex="1" title="tabindex 1">
+    - tabindex altera a posição da seleção de acordo com o click no TAB do teclado. *1* 
+</div> <br>
+
+<div tabindex="3" title="tabindex 3">
+    - tabindex altera a posição da seleção de acordo com o click no TAB do teclado. *3* 
+</div> <br>
+
+<div tabindex="2" title="tabindex 2">
+    - tabindex altera a posição da seleção de acordo com o click no TAB do teclado. *2* 
+</div> <br>
+
+<div tabindex="5" title="tabindex 5">
+    - tabindex altera a posição da seleção de acordo com o click no TAB do teclado. *5* 
+</div> <br>
+
+<div tabindex="4" title="tabindex 4">
+    - tabindex altera a posição da seleção de acordo com o click no TAB do teclado. *4* 
+</div> <br>
+
+<a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Global_attributes">
+    Saiba mais
+</a>
