@@ -5,7 +5,7 @@
 
 ## Maratona Discover 2021
 - [x] Aula 01 - A Base de tudo
-- [ ] Aula 02 - Finalização do HTML + CSS
+- [x] Aula 02 - Finalização do HTML + CSS
 - [ ] Aula 03 - Adicionando JavaScript
 - [ ] Aula 04 - Aula de Encerramento
 
@@ -13,17 +13,17 @@
 - [x] Guia Estelar HTML
 - [x] Guia Estelar CSS
 - [x] Guia Estelar GIT
-- [ ] Guia Estelar JavaScript
+- [x] Guia Estelar JavaScript
 - [ ] Guia Estelar de HTTP
-- [ ] Guia Estelar de Programação
-- [ ] Guia Estelar de Github
+- [x] Guia Estelar de Programação
+- [x] Guia Estelar de Github
 
 ## Preparação de astronautas
-- [ ] Formulários de outro planeta
+- [x] Formulários de outro planeta
 - [x] HTML que faz sentido para todos
-- [ ] Posso ver e ouvir o HTML
+- [x] Posso ver e ouvir o HTML
 - [ ] Pilotando com a DOM
-- [ ] Nem tudo são pixels
-- [ ] Nem só de classes ou ID's
-- [ ] Uma caixa dentro da outra
-- [ ] App bonito até nos textos
+- [x] Nem tudo são pixels
+- [x] Nem só de classes ou ID's
+- [x] Uma caixa dentro da outra
+- [x] App bonito até nos textos
