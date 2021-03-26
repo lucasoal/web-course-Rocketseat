@@ -1,0 +1,46 @@
+# 
+# 
+# Configurando um projeto real
+# 
+# Acessar site: https://github.com/rocketseat-education/nlw-03-discovery
+
+# Baixar e colocar arquivo na pasta do git
+# Entrar na pasta nlw-03-discovery
+# Iniciar projeto
+
+# 
+# 
+# Adcionar e commitar projeto como um todo (commits rastreados)
+# 
+# 
+
+git commit -a 
+# ou
+git commit -am "Mensagem"
+
+# 
+# 
+# Ver modificações em diversos pontos da história
+# 
+# 
+
+git show rash_inical_do_commit
+# ou
+git show rash_inical_do_commit --color-words # mostra as palavras alteradas
+# ou
+git show rash_inical_do_commit -- pasta_especifica
+
+# 
+# 
+# Ignorando arquivos ou diretórios indesejados
+# 
+#
+# No arquivo git, existe uma pasta chamada '.gitignore'
+# Nela é possível ignorar pastas e arquivos, para que não fiquem aparecendo no código
+
+nome_da_pasta/
+#ou a pasta e todos seus diretórios
+nome_da_pasta/*
+ 
+#  Deve resetar o cache do git
+git rm -r --cached .
