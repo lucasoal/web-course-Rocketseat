@@ -1,7 +1,7 @@
 # Courses and studies using the Rocketseat platform
 
 [:rocket: Rocketseat](https://app.rocketseat.com.br/dashboard)
-[:computer: My profile Rocketseat](https://app.rocketseat.com.br/me/lucaszst)
+[:computer: My profile Rocketseat](https://app.rocketseat.com.br/me/lucasoal)
 
 ## Maratona Discover 2021
 - [x] Aula 01 - A Base de tudo
